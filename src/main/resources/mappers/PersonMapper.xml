@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gzj.app.ceping.admin.dao.PersonMapper">
+
+    <sql id="TABLE">person</sql>
+
+    <sql id="COLUMNS">id</sql>
+
+    <insert id="save" parameterType="Person">
+
+    </insert>
+
+    <update id="update" parameterType="Person">
+
+    </update>
+
+    <select id="get" resultType="Person">
+        select
+        <include refid="COLUMNS"/>
+        from
+        <include refid="TABLE"/>
+        where id=#{PersonId}
+    </select>
+
+
+    <select id="getByTag" resultType="Person">
+    </select>
+
+    <select id="getById" resultType="Person">
+    </select>
+
+    <select id="delete" resultType="Person">
+    </select>
+</mapper>
